@@ -33,10 +33,10 @@ public class WelcomeController {
 	@RequestMapping("/")
 	public String welcome() {
 		System.out.println("Executing Welcome controller");
-		return "redirect:/private/menu";
+		return "redirect:/private/index";
 	}
 
-	@RequestMapping("/private/menu")
+	@RequestMapping("/private/index")
 	public String index(Principal p, @ModelAttribute("loginCounter") LoginCounter loginCounter, Model model,
 			HttpSession session) {
 		loginCounter.inc();

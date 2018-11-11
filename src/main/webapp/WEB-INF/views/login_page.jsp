@@ -6,7 +6,7 @@
 
 <html>
 <head>
-<title>Amazin</title>
+<title><spring:message code="title"/></title>
 </head>
 <body>
 	<h1 style="text-align: center;"><spring:message code="title"/></h1>
