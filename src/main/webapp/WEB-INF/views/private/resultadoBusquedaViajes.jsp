@@ -49,9 +49,9 @@
 								
 								<td><c:out value="${viaje.origen}"></c:out></td>
 								<td><c:out value="${viaje.destino}"></c:out></td>
-								<td><fmt:formatDate value="${viaje.f_salida}" pattern="yyyy-MM-dd HH:mm" /></td>
-								<td><c:out value="${viaje.plazas_totales}"></c:out></td>
-								<td><c:out value="${viaje.plazas_quedan}"></c:out></td>
+								<td><fmt:formatDate value="${viaje.fechaSalida}" pattern="yyyy-MM-dd HH:mm" /></td>
+								<td><c:out value="${viaje.plazasTotales}"></c:out></td>
+								<td><c:out value="${viaje.plazasRestantes}"></c:out></td>
 								<td><c:out value="${viaje.precio}"></c:out></td>	
 							</tr>
 						</c:forEach>

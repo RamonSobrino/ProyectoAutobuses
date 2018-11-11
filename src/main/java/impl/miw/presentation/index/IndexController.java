@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.miw.business.ViajeManagerService;
 import com.miw.model.BusquedaViajeRequest;
+import com.miw.model.EleccionViajeRequest;
 import com.miw.model.Viaje;
 
 @Controller
@@ -77,6 +78,7 @@ public class IndexController {
 					}
 				}
 				model.addAttribute("busquedaViajeRequest", new BusquedaViajeRequest());
+				model.addAttribute("eleccionViajeRequest ", new EleccionViajeRequest());
 
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -84,7 +86,7 @@ public class IndexController {
 			}
 		}
 
-		return "private/resultadoBusquedaViajes";
+		return "/private/resultadoBusquedaViajes";
 	}
 
 	@ModelAttribute
